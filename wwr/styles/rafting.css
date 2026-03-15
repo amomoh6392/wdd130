@@ -1,6 +1,6 @@
 :root{
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --secondary-color: #4a2506;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -59,12 +59,15 @@ nav, p, section, article {
 }
 h2 {
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     top: 10px;
     width: 100%;
     padding: 16px;
 }
 
+section p {
+    color: var(--secondary-color);
+}
 .hero article {
     position: absolute;
     bottom: 0;
