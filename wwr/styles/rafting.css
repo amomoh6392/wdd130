@@ -32,7 +32,7 @@ nav, p, section, article,.block img {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 0;
-    background-color: rgba(51, 62, 41, 0.154);
+    background-color: var(--accent2-color);
     font-size: larger;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -42,9 +42,15 @@ nav, p, section, article,.block img {
     font-size: small;
     font-weight: bold; 
 }
-.nav-link{
+.nav-link {
     display: flex;
     justify-content: space-around;
+}
+
+.nav-link a{
+    color: var(--accent1-color);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1, h2 {
@@ -93,7 +99,7 @@ section p {
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    background-color: rgba(51, 62, 41, 0.154) ;
+    background-color:var(--accent2-color) ;
 }
 
 .in {
@@ -131,7 +137,7 @@ section p {
 
 }
 .adventure{
-    background-color: rgba(51, 62, 41, 0.154) ;
+    background-color:var(--accent2-color) ;
     margin: 0;
 }
 .advert{
