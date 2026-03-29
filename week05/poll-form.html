@@ -3,38 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll=form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>Poll-form</title>
 </head>
 <body>
-    <form action="Contact Information">
-        <label for="fullname">Fullname</label>
-        <input type="text" id="fullname" name="fullname" required>
-        <label for="useremail">Email:</label>
-        <input type="email" id="useremail" name="useremail" required>
-        <label for="quality">Select Quality</label>
-        <select name="quality" id="quality">
+    <form >
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <br>
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+            <br>
+        </fieldset>
+    </form>
+    <form >
+        <fieldset>
+            <legend>Questions</legend>
+            <label for="quality">Select Quality</label>
+            <select name="quality" id="quality">
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
-        </select>
-    </form>
-    <form action="Question">
-         <label for="browser">What is your favorite internet browser</label>
-        <select name="browser" id="browser">
+            </select>
+            <br>
+            <label for="browser">What is your favorite internet browser</label>
+            <select name="browser" id="browser">
             <option value="chrome">Chrome</option>
             <option value="firefox">Firefox</option>
             <option value="edge">Edge</option>
             <option value="brave">Brave</option>
             <option value="other">Other</option>
-        </select>
+            </select>
+            <br>
+            <br>
+            <label for="pet">Do you have a house pet?</label>
+            <input type="checkbox" id="pet " name="pet">
+            <br>
+            <br>
+            <label for="feedback">List the place you have lived</label>
+            <textarea name="feedback" id="feedback" rows="4" placeholder="Warri Delta Nigeria"></textarea>
+        </fieldset>
     </form>
-    <form action="">
-        <label for="pet">Do you have a house pet?</label>
-        <input type="checkbox" id="pet " name="pet">
-        <label for="feedback">List the place you have lived</label>
-        <textarea name="feedback" id="feedback" rows="4" placeholder="Warri Delta Nigeria"></textarea>
-    </form>
-    <form action="">
+    <form>
         <button type="submit">Submit Poll</button>
     </form>  
         
