@@ -22,7 +22,7 @@
     </header>
     <main>
         <section class="details">
-            <h2>The Am17 Rafting Company</h2>
+            <h1>The Am17 Rafting Company</h1>
             <p>15 Am17 Drive, jubile city</p>
             <p>Delta, Nigeria</p>
             <p>+234 816 8572 561</p>
@@ -44,16 +44,16 @@
                         <div class="purpose-container">
                             <p>Purpose of Message</p>
                             <div class="radio-group">
-                                <label>
-                                    <input type="radio" name="purpose" value="general" required>
+                                <label for="purpose-general">
+                                    <input type="radio" id="purpose-general" name="purpose" value="general" required>
                                     General inquiry
                                 </label>
-                                <label>
-                                    <input type="radio" name="purpose" value="reservation" required>
+                                <label for="purpose-reservation">
+                                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation" required>
                                     Reservation Question
                                 </label>
-                                <label>
-                                    <input type="radio" name="purpose" value="suggestion" required>
+                                <label for="purpose-suggestion">
+                                    <input type="radio" id="purpose-suggestion"  name="purpose" value="suggestion" required>
                                     Website Suggestion
                                 </label>
                             </div>
@@ -66,7 +66,7 @@
                             <input type="checkbox" name="subscribe" id="subscribe">
                             <label for="subscribe"> Please subscribe me to the monthly newsletter</label>
                         </div>
-                        <button type="submit">Get in Touch!</button>
+                        <button type="submit" aria-label="Send your message to AM17 Rafting Company">Get in Touch!</button>
                     
                     </form>
                 </div>
