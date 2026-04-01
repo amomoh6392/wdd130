@@ -171,6 +171,7 @@ section p {
 }
 
 /*this is contact page css*/
+
 .contact-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -307,10 +308,15 @@ input[type="radio"]:checked::after {
     color: var(--accent1-color);
 }
 .details {
+    background-color: var(--accent1-color);
     text-align: center;
     color: var(--accent2-color);
     padding: .8rem;
 }
+.details h1, .details p {
+    color: var(--accent2-color);
+}
+
 .details h2 {
     text-align: center;
 
@@ -319,6 +325,9 @@ input[type="radio"]:checked::after {
     background-color: var(--accent2-color);
     margin:var(--space-large);
     padding-bottom: var(--space-medium);
+}
+.serve, .serve p, .serve h2{
+    color: var(--accent1-color);
 }
 .helps{
     display: flex;
@@ -382,7 +391,7 @@ label {
 .subscribe-container label {
     margin: 0;
     font-weight: normal;     
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     cursor: pointer; 
     font-size: 0.95rem;
 }
