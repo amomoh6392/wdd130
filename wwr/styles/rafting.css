@@ -179,6 +179,9 @@ section p {
     margin:var(--space-large) auto;
 }
 .contact-form form {
+    background-color: var(--accent2-color); 
+    padding: var(--space-medium);
+    border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr; 
     gap: var(--space-small);
@@ -193,7 +196,7 @@ section p {
     display: block;
     margin-top: var(--space-small);
     text-align: left;
-    color: var(--accent2-color); 
+    color: var(--accent1-color); 
     margin-bottom: 5px;
 }
 .purpose-container, 
@@ -304,7 +307,6 @@ input[type="radio"]:checked::after {
     color: var(--accent1-color);
 }
 .details {
-    background-color: var(--accent1-color);
     text-align: center;
     color: var(--accent2-color);
     padding: .8rem;
@@ -314,8 +316,7 @@ input[type="radio"]:checked::after {
 
 }
 .serve{
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
     margin:var(--space-large);
     padding-bottom: var(--space-medium);
 }
