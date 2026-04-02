@@ -24,7 +24,7 @@ body{
 header, main, footer {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 var(--space-small);
+    
 }
 section{
     margin: var(--space-medium) 0;
@@ -46,7 +46,7 @@ p{
 .logo{
     padding: var(--space-small);
     font-size: small;
-    font-weight: bold; 
+    font-weight: bold;
 }
 .nav-link {
     display: flex;
@@ -94,7 +94,7 @@ h2 {
     top: var(--space-small);
     width: 100%;
     padding: var(--space-medium);
-    grid-column: 1/-1;
+    grid-column: 1/4;
 }
 
 section p {
@@ -102,15 +102,16 @@ section p {
 }
 
 .block{
-    margin-top: var(--space-small);
+    margin:var(--space-small);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     background-color:var(--accent2-color) ;
 }
 
 .in {
     grid-row: 2;
     grid-column: 1/2;
+    
 }
 .out {
     grid-row: 2;
@@ -126,7 +127,7 @@ section p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: var(--space-small);
+    padding:var(--space-small);
     text-align: left;
     color: var(--accent2-color);
     background-color: var(--accent1-color);
@@ -137,7 +138,7 @@ section p {
     float: right;
     width: 125px;
     height: auto;
-    padding-top: var(--space-medium);
+    padding-top: 8px;
 
 }
 .adventure h2 {
@@ -160,17 +161,21 @@ section p {
     font-size: 0.9rem;
 }
 .adventure{
-    background-color:var(--accent2-color) ;
-    margin: 0;
+    background-color: var(--accent2-color);
+    margin:0;
+    padding-bottom: var(--space-medium);
 }
 .advert{
-    margin-top: var(--space-small);
+    margin-bottom: var(--space-small);
     display: flex;
     justify-content: space-between;
     gap: var(--space-small);
 }
 
 /*this is contact page css*/
+.details h1, .details p {
+    color: var(--accent2-color);
+}
 
 .contact-section{
     display: grid;
@@ -179,12 +184,12 @@ section p {
     align-items: start;
     margin:var(--space-large) auto;
 }
-.contact-form form {
-    background-color: var(--accent2-color); 
+.contact-form {
+    background-color: var(--accent2-color);
     padding: var(--space-medium);
     border-radius: 8px;
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: var(--space-small);
     align-items: start;
 }
@@ -197,11 +202,11 @@ section p {
     display: block;
     margin-top: var(--space-small);
     text-align: left;
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
     margin-bottom: 5px;
 }
-.purpose-container, 
-.contact-form textarea, 
+.purpose-container,
+.contact-form textarea,
 .contact-form button {
     grid-column: 1 / span 2;
 }
@@ -225,6 +230,7 @@ input[type="radio"] {
     outline: none;
     cursor: pointer;
     position: relative;
+    margin: 0;
 }
 input[type="radio"]:checked::after {
     content: '';
@@ -237,23 +243,19 @@ input[type="radio"]:checked::after {
     background-color: var(--accent1-color);
     border-radius: 50%;
 }
- .contact-form .purpose-container {
+ .purpose-container {
     display: flex;
-    flex-direction: row ; 
+    flex-direction: row ;
     align-items: flex-start;
     gap: var(--space-medium);
     margin-top: var(--space-medium);
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1;
 }
- .purpose-container p{
-    min-width: 80px;
-    margin: 0;
-    font-weight: bold;
-    color: var(--accent1-color);
-}
+
+
 .radio-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     gap: var(--space-small);
 }
 .radio-group label {
@@ -266,7 +268,7 @@ input[type="radio"]:checked::after {
 }
 .contact-form form > div:first-of-type {
     display: grid;
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 80px 1fr;
     gap: var(--space-small);
     align-items: center;
     margin-bottom: var(--space-medium);
@@ -285,7 +287,7 @@ input[type="radio"]:checked::after {
 }
 .contact-form div:nth-of-type(2) label {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: var(--space-small);
     font-weight: normal;
@@ -308,15 +310,10 @@ input[type="radio"]:checked::after {
     color: var(--accent1-color);
 }
 .details {
-    background-color: var(--accent1-color);
     text-align: center;
     color: var(--accent2-color);
     padding: .8rem;
 }
-.details h1, .details p {
-    color: var(--accent2-color);
-}
-
 .details h2 {
     text-align: center;
 
@@ -377,7 +374,7 @@ label {
     align-items: center;  
     gap: var(--space-small);
     margin: var(--space-small) 0;  
-    grid-column: 1 / -1;               
+    grid-column: 1 / -1;              
 }
 
 .subscribe-container input[type="checkbox"] {
@@ -390,9 +387,9 @@ label {
 }
 .subscribe-container label {
     margin: 0;
-    font-weight: normal;     
+    font-weight: normal;    
     color: var(--accent1-color);
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 0.95rem;
 }
 button {
