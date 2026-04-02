@@ -24,7 +24,6 @@ body{
 header, main, footer {
     max-width: 900px;
     margin: 0 auto;
-    
 }
 section{
     margin: var(--space-medium) 0;
@@ -95,10 +94,6 @@ h2 {
     width: 100%;
     padding: var(--space-medium);
     grid-column: 1/4;
-}
-
-section p {
-    color: var(--secondary-color);
 }
 
 .block{
@@ -173,8 +168,8 @@ section p {
 }
 
 /*this is contact page css*/
-.details h1, .details p {
-    color: var(--accent2-color);
+.details p {
+    color: var(--secondary-color);
 }
 
 .contact-section{
@@ -258,6 +253,7 @@ input[type="radio"]:checked::after {
     flex-direction: column !important;
     gap: var(--space-small);
 }
+
 .radio-group label {
     display: flex;
     flex-direction: row;
@@ -307,25 +303,20 @@ input[type="radio"]:checked::after {
 .contact-form p{
     margin-top:var(--space-small);
     font-weight: bold;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 .details {
     text-align: center;
     color: var(--accent2-color);
     padding: .8rem;
 }
-.details h2 {
-    text-align: center;
 
-}
 .serve{
     background-color: var(--accent2-color);
     margin:var(--space-large);
     padding-bottom: var(--space-medium);
 }
-.serve, .serve p, .serve h2{
-    color: var(--accent1-color);
-}
+
 .helps{
     display: flex;
     justify-content: space-around;
@@ -338,12 +329,10 @@ input:not([type="checkbox"]):not([type="radio"]) ,textarea{
     padding:var(--space-small);
     border: 1px solid #ccc;
 }
-label {
-    font-weight: bold;
-}
+
 .map iframe {
     width: 100%;
-    height: 400px;
+    height: 500px;
     border: none;
 }
 .employees img{
