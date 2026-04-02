@@ -30,6 +30,7 @@ section{
 }
 p{
     margin: 8px 0;
+    color: var(--secondary-color);
 }
 
 .main-header{
@@ -99,7 +100,7 @@ h2 {
 .block{
     margin:var(--space-small);
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color:var(--accent2-color) ;
 }
 
@@ -168,10 +169,6 @@ h2 {
 }
 
 /*this is contact page css*/
-.details p {
-    color: var(--secondary-color);
-}
-
 .contact-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -194,11 +191,11 @@ h2 {
     margin-bottom: var(--space-small);
 }
 .contact-form label {
-    display: block;
-    margin-top: var(--space-small);
-    text-align: left;
-    color: var(--accent1-color);
-    margin-bottom: 5px;
+    display:flex;
+    text-align: center;
+    color: var(--secondary-color);
+    
+    gap: var(--space-small);
 }
 .purpose-container,
 .contact-form textarea,
@@ -206,15 +203,6 @@ h2 {
     grid-column: 1 / span 2;
 }
 
-.contact-form div label{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-small);
-    font-weight: normal;
-    margin: 5px 0;
-    color: var(--secondary-color);
-}
 input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
@@ -240,28 +228,18 @@ input[type="radio"]:checked::after {
 }
  .purpose-container {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row !important;
     align-items: flex-start;
     gap: var(--space-medium);
     margin-top: var(--space-medium);
     grid-column: 1 / -1;
 }
-
-
 .radio-group {
     display: flex;
-    flex-direction: column !important;
-    gap: var(--space-small);
+    flex-direction: column ;
+    gap: var(--space-small)
 }
 
-.radio-group label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-small);
-    margin: 0;
-    font-weight: normal;
-}
 .contact-form form > div:first-of-type {
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -269,26 +247,7 @@ input[type="radio"]:checked::after {
     align-items: center;
     margin-bottom: var(--space-medium);
 }
-.contact-form div:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: var(--space-medium);
-    margin-bottom: var(--space-medium);
-}
-.contact-form div:nth-of-type(3) {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / span 2;
-}
-.contact-form div:nth-of-type(2) label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-small);
-    font-weight: normal;
-    color: var(--secondary-color);
-}
+
 .contact-form form div:first-of-type > label,
 .contact-form form div:first-of-type > input {
     display: block;
@@ -296,10 +255,6 @@ input[type="radio"]:checked::after {
     margin: 0;
 }
 
-.contact-form form div:first-of-type label {
-    margin: 0;
-    font-weight: normal;
-}
 .contact-form p{
     margin-top:var(--space-small);
     font-weight: bold;
@@ -307,7 +262,7 @@ input[type="radio"]:checked::after {
 }
 .details {
     text-align: center;
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: .8rem;
 }
 
@@ -332,7 +287,7 @@ input:not([type="checkbox"]):not([type="radio"]) ,textarea{
 
 .map iframe {
     width: 100%;
-    height: 500px;
+    height: 445px;
     border: none;
 }
 .employees img{
@@ -377,7 +332,7 @@ input:not([type="checkbox"]):not([type="radio"]) ,textarea{
 .subscribe-container label {
     margin: 0;
     font-weight: normal;    
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     cursor: pointer;
     font-size: 0.95rem;
 }
