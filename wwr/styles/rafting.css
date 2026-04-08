@@ -178,7 +178,7 @@ h2:not(.action-content h2){
     align-items: start;
     margin:var(--space-large) auto;
 }
-.contact-form {
+.contact-form{
     background-color: var(--accent2-color);
     padding: var(--space-medium);
     border-radius: 8px;
