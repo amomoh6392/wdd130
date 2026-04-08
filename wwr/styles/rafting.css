@@ -68,11 +68,11 @@ h1, h2 {
     text-decoration: none;
 }
 
-.hero {
+.hero, .ark, .action, .grid-content {
     position: relative;
 }
 
-.hero img {
+.hero img, .ark img, .action img, .grid-item img{
     display: block;
     width: 100%;
     height: auto;
@@ -87,12 +87,12 @@ h1, h2 {
     background-color: rgba(38, 70, 83, 0.8);
     color: #fff;
 }
-h2 {
+h2:not(.action-content h2){
     text-align: center;
     background-color: var(--accent2-color);
     top: var(--space-small);
     width: 100%;
-    padding: var(--space-medium);
+    padding: var(--space-small);
     grid-column: 1/4;
 
 }
@@ -107,12 +107,12 @@ h2 {
 .in {
     grid-row: 2;
     grid-column: 1/2;
-    padding: 10px;
+    padding: var(--space-small)
 }
 .out {
     grid-row: 2;
     grid-column: 3/4;
-    padding: 10px;
+    padding: var(--space-small);
 }
 .block img{
     padding: var(--space-medium);
@@ -349,6 +349,57 @@ button {
 }
 button:hover{
     background-color: var(--primary-color)
+}
+
+/*for index page*/
+
+.ark h1{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: var(--accent2-color);
+    font-size: 2.5rem;
+    background-color: var(--accent1-color);
+    padding: 10px;
+}
+.action-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    color:var(--accent2-color) ;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+}
+.action-content h2{
+    color:var(--accent2-color);
+}
+.tale{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    padding: var(--space-small) var(--space-medium);
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:var(--space-small);
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-small);
+}
+.grid-item img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid var(--accent1-color);
 }
 footer{
     display: flex;
